@@ -3,6 +3,7 @@
 //a = 2, b = 10 -> нет 
 //a = 9, b = -3 -> да 
 //a = -3 b = 9 -> нет
+// MathPow(переменная,степень) в нашем случае MathPow(number2,2)
 Console.WriteLine("Введите число 1: ");
 int number1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число 2: ");
