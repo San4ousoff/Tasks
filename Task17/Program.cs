@@ -5,7 +5,10 @@
 */
 Console.Clear();
 
-int[]arr = new int[8];
+Console.Write("Введите количество элементов массива: ");
+int num = int.Parse(Console.ReadLine()!);
+
+int[]arr = new int[num];
 ArrRun(arr);
 
 void ArrRun (int[] arrTemp)
