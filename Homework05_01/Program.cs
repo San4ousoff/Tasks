@@ -13,7 +13,7 @@ int length = int.Parse(Console.ReadLine()!);
 //Console.Write($"Значение максимального элемента массива: ");
 //int maxEl = int.Parse(Console.ReadLine()!);
 Console.Write("Исходный массив: ");
-int[] array = GetArray(length,100,1000);
+int[] array = GetArray(length,1,2);
 EvenNum();
 
 int[] GetArray (int size, int minValue, int maxValue)
@@ -21,7 +21,7 @@ int[] GetArray (int size, int minValue, int maxValue)
     int[] rez = new int[size];
     for (int i=0; i<size; i++)
     {
-        rez[i] = new Random().Next(minValue,maxValue);
+        rez[i] = new Random().Next(minValue,maxValue+1);
         Console.Write($"{rez[i]} ");
     }
     return rez;
