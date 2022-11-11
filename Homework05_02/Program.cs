@@ -14,26 +14,26 @@ int minEl = int.Parse(Console.ReadLine()!);
 Console.Write($"Значение максимального элемента массива: ");
 int maxEl = int.Parse(Console.ReadLine()!);
 Console.Write("Исходный массив: ");
-int[] array = GetArray(length,minEl,maxEl);
+int[] array = GetArray(length, minEl, maxEl);
 SumOddNum();
 
-int[] GetArray (int size, int minValue, int maxValue)
+int[] GetArray(int size, int minValue, int maxValue)
 {
     int[] arr = new int[size];
-    for (int i=0; i<size; i++)
+    for (int i = 0; i < size; i++)
     {
-        arr[i] = new Random().Next(minValue,maxValue+1);
+        arr[i] = new Random().Next(minValue, maxValue + 1);
         Console.Write($"{arr[i]} ");
     }
     return arr;
 }
 
-void SumOddNum ()
+void SumOddNum()
 {
     int sumOddNum = 0;
-    for (int count=0; count<array.Length; count++)
+    for (int count = 0; count < array.Length; count++)
     {
-        if (count%2!=0) sumOddNum=sumOddNum+array[count];
+        if (count % 2 != 0) sumOddNum = sumOddNum + array[count];
     }
     Console.WriteLine($"Сумма элементов на нечетных позициях = {sumOddNum}");
 }
